@@ -6,6 +6,7 @@
     <property name="maxHistory" value="30"/>
 
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+         <!--远程容器中的logstash地址 <destination>106.12.13.244:5044</destination> -->
         <destination>localhost:8099</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" />
     </appender>
@@ -40,10 +41,11 @@
         <appender-ref ref="FILE"/>
     </root>
     
-    <!--没有输出源就向上到root root的打印级别不影响子类 -->
+    <!--没有输出源就向上到root root的打印级别不影响子类
     <logger name="com.lujieni.elk.controller" level="info" additivity="false">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="LOGSTASH"/>
     </logger>
+    -->
 
 </configuration>

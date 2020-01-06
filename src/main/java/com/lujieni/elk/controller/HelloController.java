@@ -14,7 +14,7 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public void hello(){
-        log.info("http-2-8080-exec-nio-bb-qq");
+        log.debug("http-2-8080-exec-nio-bb-qq");
     }
 
 }

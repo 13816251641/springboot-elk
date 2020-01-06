@@ -13,7 +13,7 @@ public class SpringbootElkApplicationTests {
 
     @Test
     public void test() {
-        log.info("hello1");
+        log.info("aaaa is good good haha");
         log.info("hello2");
 
     }
